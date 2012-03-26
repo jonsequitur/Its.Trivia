@@ -8,14 +8,14 @@ namespace Its.Trivia
     [TestClass, TestFixture]
     public class WhoDoesTheCompilerChoose
     {
-        [Test, TestMethod, Owner("josequ")]
+        [Test, TestMethod]
         public void Generic_overloads()
         {
             Please.ChooseMe(new Option());
             Please.ChooseMe(new Option<string>());
         }
 
-        [Test, TestMethod, Owner("josequ")]
+        [Test, TestMethod]
         public void Optional_versus_params()
         {
             Please.ChooseMe();
