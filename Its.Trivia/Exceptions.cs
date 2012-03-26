@@ -7,16 +7,23 @@ namespace Its.Trivia
     [TestClass, TestFixture]
     public class Exceptions
     {
-        [Test, TestMethod, Owner("josequ")]
+        [Test, TestMethod]
         public void What_is_returned()
         {
             Console.WriteLine(ReturnsWhat());
         }
 
-        [Test, TestMethod, Owner("josequ")]
+        [Test, TestMethod]
         public void What_is_thrown()
         {
-            ThrowsWhat();
+            try
+            {
+                ThrowsWhat();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+            }
         }
 
         private void ThrowsWhat()
