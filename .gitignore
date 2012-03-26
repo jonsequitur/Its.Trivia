@@ -1,3 +1,6 @@
 
 *.user
 *.suo
+/Its.Trivia/bin/*
+/Its.Trivia/obj/*
+/_ReSharper.Its.Trivia/*
